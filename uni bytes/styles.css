@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.jumbotron {
+    background-color: #6c757d;
+    color: white;
+    padding: 4rem 2rem;
+}
+
+header .btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+#recipe-list .card {
+    margin-bottom: 20px;
+    height: 360px; /* Set a fixed height for the card */
+    display: flex;
+    flex-direction: column;
+}
+
+#recipe-list .card-img-top {
+    height: 250px; /* Fixed height for images */
+    object-fit: cover; /* Ensures images fit within the specified height without distortion */
+}
+
+#recipe-list .card-body {
+    flex-grow: 1; /* Allows the body to fill the remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Spreads content evenly within the card body */
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+@media (max-width: 576px) {
+    #recipe-list .card {
+        height: auto; /* Let the card height adjust automatically */
+        flex-direction: column;
+    }
+    #recipe-list .card-img-top {
+        height: 150px; /* Reduce image height on smaller screens */
+    }
+    #recipe-list .card-body {
+        padding: 10px; /* Add some padding to the card body */
+    }
+    .carousel-container {
+        height: 300px; /* Reduce carousel height on smaller screens */
+    }
+    .carousel-inner img {
+        height: 300px; /* Match carousel image height */
+    }
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #FFCCCB; /* Light Coral */
+}
+
+.navbar .navbar-brand, 
+.navbar .nav-link {
+    color: #FF6347; /* Tomato Red */
+}
+
+.navbar .nav-link:hover {
+    color: #C82C2A; /* Dark Tomato Red */
+}
+
+.navbar-brand img {
+    height: 100px; /* Adjust as needed */
+    max-width: 100%; /* Ensure the image scales responsively */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2F4F4F; /* Dark Slate Gray */
+    color: white;
+    padding: 20px; /* Add some padding for better spacing */
+    text-align: center;
+}
+
+#recipe-list .card {
+    margin-top: 50px; /* Space between cards */
+    display: flex;
+    flex-direction: column;
+}
+.card {
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column; /* Ensure card content stacks vertically */
+    height: 100%; /* Make sure cards take full height */
+}
+
+.card-body {
+    flex: 1; /* Allow the card body to grow and fill the space */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Distribute space evenly */
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 2.5rem; /* Adjust icon size */
+    color: white; /* Icon color */
+    background-color: #007bff; /* Background color for the icon */
+    display: flex; /* Use flexbox to center the icon */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    margin: 0 auto; /* Center the icon container */
+    margin-bottom: 1rem; /* Space below the icon */
+}
+
+.card-text {
+    margin-bottom: 1.5rem; /* Space below text */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Button color */
+    border-color: #007bff; /* Button border color */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    border-color: #0056b3; /* Darker border on hover */
+}
